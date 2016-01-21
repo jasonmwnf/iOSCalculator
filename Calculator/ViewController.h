@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    int currentOperation;
+    float result;
+    float currentNumber;
+    
+}
+@property (weak, nonatomic) IBOutlet UILabel *Label;
 
 
+- (IBAction)buttonDigit:(id)sender;
+- (IBAction)buttonOperation:(id)sender;
+- (IBAction)Cancel:(id)sender;
 @end
 
